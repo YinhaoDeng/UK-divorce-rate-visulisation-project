@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UK Divorce rate from 1971 to 2012</title>
+    <!-- Bootstrap library CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: rgb(54,53,66)">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="./imgs/pngwing.com.png" alt="UK map" style="width:80%; height:auto">
+                <img src="imgs/divorce-red-rubber-stamp-over-white-background-88098702-removebg-preview.png" alt="divorce" style="position: absolute; left: 50px; top: 100px; width:20%; height:auto">
+            </div>
+
+            <div class="col-8" style="margin-top: 5%;">
+                <h1> UK <inline style="color: #EB586F;"> divorce rates</inline> visulisation</h1>
+                <br>
+                <h3 style="text-align:justify"> The webpage displays the visulisation of information relative to divorce in <inline style="color:#4AA0D5">England and Wales</inline>, 
+                    <inline style="color:#4AA0D5">from 1971 to 2012</inline> (the latest year when the data was collected). </h2>
+                <br>
+                <p style="text-align: right;"> Author: Yinhao Deng</p>
+                <p style="text-align: right;"> Date: September 2021</p>
+
+            </div>
+
+        </div>
+
+        
+        <!--Tableau Dashboard-->
+        <p> <i>*Remind: It takes time to load charts from the Tableau server. If the chart greyed out, try to click somewhere out of the dashboard area.</i></p>
+        <div class='tableauPlaceholder' id='viz1632029445048' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='Main Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IV&#47;IVAssginment2&#47;MainDashboard&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='IVAssginment2&#47;MainDashboard' />
+                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IV&#47;IVAssginment2&#47;MainDashboard&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /><param name='language' value='en-GB' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>   
+
+        <h2>Findings:</h2>
+        <ul>
+            <li>median duration of marriage various between 8.9 (occured in 1985) years to 12.2 years (occured in 1972).</li>
+            <li>The median age at divorce is in a rising trend for both genders.</li>
+            <li>Divorce rate first time increases after 6-year decrease since 2004.</li>
+            <li>There are peaks in the early of each decade, according to reference, they were impacted by recession.</li>
+        </ul>
+
+        <br>
+        <h2>Future work:</h2>
+        <ul>
+            <li>To explore why there is a rapid growth in divorce rate in 1985. (based on the 'Median age at divorce against gender' Chart).</li>
+            <li>To search what event cause the recession in the early of each decade, which had directly impact on divorce rates.</li>
+        </ul>
+        
+
+        <br>
+        <h2>Related links:</h2>
+        <button type="button" class="btn btn-lg" ><a href="https://www.theguardian.com/news/datablog/2010/jan/28/divorce-rates-marriage-ons">Data Blog</a></button>
+        <button type="button" class="btn btn-lg" ><a href="https://docs.google.com/spreadsheets/d/1caHyaJSD31eMwiG-jxn5wUH6M17QydeelLFH3eRuX24/edit#gid=0">Original Data Source</a></button>
+
+        <br>
+        <hr style="color: #D8E9F0;">
+        <p style="text-align: center;">&copy; 2021 Yinhao Deng All rights reserved</p>
+
+    </div>   <!--end div of container-->>
+        
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1632029445048');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800 ) 
+        { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+        else if ( divElement.offsetWidth > 500 ) 
+        {   vizElement.style.width='100%';
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else { 
+            vizElement.style.width='100%';vizElement.style.height='1627px';
+        }                     var scriptElement = document.createElement('script');                    
+        
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    
+</body>
+
+
+
+<style>
+.container {
+    margin: 5%;
+    position:relative;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h1, h2, h3, p,ul, li {
+    color: #D8E9F0;
+}
+
+.tableauPlaceholder {
+    border-radius: 2em;
+    border-style: solid;
+    border-color: #D8E9F0;
+
+    margin-bottom: 5em;
+}
+
+
+
+h1, h2, h3, p, ul, li {
+    font-family: 'Source Serif Pro', serif;
+}
+</style>
+
+</html>
